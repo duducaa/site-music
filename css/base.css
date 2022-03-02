@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    --cabecalho: rgb(255, 0, 0);
+    --sublista: rgb(182, 0, 0);
+
+    height: 200vh;
+    z-index: 0;
+}
+
+body.escuro {
+    --cabecalho: rgb(36, 27, 27);
+    --sublista: rgb(48, 38, 38);
+}
+
+body * {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.fundo-escuro {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.fundo-escuro-active {
+    display: block;
+    z-index: 1;
+}
+
+.cabecalho a {
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 10vh;
+}
+
+main a {
+    color: black;
+    display: block;
+}
